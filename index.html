@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HCuts Barber — premium cuts in Ottawa. Book a haircut at my place or request a mobile visit." />
+  <title>HCuts Barber | Ottawa</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Unbounded:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Top announcement -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__text">
+        Ottawa • Home-based & Mobile (house calls available) •
+        <a class="topbar__link" href="#book">Book now</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="HCuts Barber Home">
+        <span class="brand__mark">HC</span>
+        <span class="brand__text">
+          <span class="brand__name">HCuts Barber</span>
+          <span class="brand__meta">Ottawa • Premium Grooming</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#gallery">Gallery</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#reviews">Reviews</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__cta btn btn--primary" href="#book">Book</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero section" aria-label="Hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>Ottawa barber • Clean fades • Crisp line-ups</span>
+          </div>
+
+          <h1 class="hero__title">
+            Premium cuts —
+            <span class="gradient">at my place or yours.</span>
+          </h1>
+
+          <p class="hero__lead">
+            Book a sharp, consistent cut with a detail-first barber. Choose a home appointment at my studio,
+            or request a mobile visit (priced fairly by distance/time).
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#book">Book appointment</a>
+
+            <!-- Replace with a real link (WhatsApp/SMS) later -->
+            <a class="btn btn--ghost" href="https://www.instagram.com/hcutsbarber/" target="_blank" rel="noreferrer">
+              View Instagram
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trustCard">
+              <span class="trustCard__kpi">⏱️</span>
+              <div>
+                <p class="trustCard__title">On-time</p>
+                <p class="trustCard__desc">Respect for your schedule</p>
+              </div>
+            </div>
+            <div class="trustCard">
+              <span class="trustCard__kpi">🧼</span>
+              <div>
+                <p class="trustCard__title">Sanitized</p>
+                <p class="trustCard__desc">Clean tools • fresh finish</p>
+              </div>
+            </div>
+            <div class="trustCard">
+              <span class="trustCard__kpi">🎯</span>
+              <div>
+                <p class="trustCard__title">Detail-first</p>
+                <p class="trustCard__desc">Fades • line-ups • beard work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="heroCard">
+            <!-- Replace hero.jpg later -->
+            <img class="heroCard__img" src="assets/hero.jpg" alt="HCuts Barber - premium haircut result" loading="eager" />
+            <div class="heroCard__overlay">
+              <div class="heroCard__badge">
+                <span class="badge__title">Fast booking</span>
+                <span class="badge__sub">Pick service → location → time</span>
+              </div>
+              <div class="heroCard__stats">
+                <div class="stat">
+                  <span class="stat__num">Ottawa</span>
+                  <span class="stat__label">Service area</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">Mobile</span>
+                  <span class="stat__label">House calls</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">Pro</span>
+                  <span class="stat__label">Finish</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__note">
+            <p><strong>Tip:</strong> Upload your best 12–16 photos first — the gallery is your conversion engine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-label="Services">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__title">Services</h2>
+          <p class="sectionHead__desc">
+            Clear pricing, clean work. Mobile visits available — add-on depends on distance/time.
+          </p>
+        </div>
+
+        <div class="grid grid--3 reveal">
+          <article class="card serviceCard">
+            <h3>Classic Cut</h3>
+            <p>Clean cut with detail on shape and finish.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">30–45 min</span>
+              <span class="price">$XX</span>
+            </div>
+          </article>
+
+          <article class="card serviceCard">
+            <h3>Skin Fade</h3>
+            <p>Sharp fade with a crisp line-up and smooth blend.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">45–60 min</span>
+              <span class="price">$XX</span>
+            </div>
+          </article>
+
+          <article class="card serviceCard">
+            <h3>Beard Trim + Line-up</h3>
+            <p>Defined beard shape, clean edges, natural finish.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">20–30 min</span>
+              <span class="price">$XX</span>
+            </div>
+          </article>
+
+          <article class="card serviceCard">
+            <h3>Cut + Beard</h3>
+            <p>Full groom: cut + beard work + sharp line-up.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">60–75 min</span>
+              <span class="price">$XX</span>
+            </div>
+          </article>
+
+          <article class="card serviceCard">
+            <h3>Kids Cut</h3>
+            <p>Patient, clean cut. Bring a reference photo if helpful.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">30–45 min</span>
+              <span class="price">$XX</span>
+            </div>
+          </article>
+
+          <article class="card serviceCard">
+            <h3>House Call (Add-on)</h3>
+            <p>Mobile visit priced fairly by distance/time. Book via message.</p>
+            <div class="serviceCard__meta">
+              <span class="tag">Travel fee</span>
+              <span class="price">From $XX</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="ctaStrip reveal">
+          <div>
+            <h3>Want a specific look?</h3>
+            <p>Send a reference photo when you book — I’ll match the style and hair type.</p>
+          </div>
+          <a class="btn btn--primary" href="#book">Book now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery" aria-label="Gallery">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__title">Gallery</h2>
+          <p class="sectionHead__desc">Tap any photo to view. Replace placeholders with Hassan’s work later.</p>
+        </div>
+
+        <div class="masonry reveal" id="galleryGrid">
+          <!-- Replace these with real images later -->
+          <button class="masonry__item" data-full="assets/g1.jpg" aria-label="Open haircut photo 1">
+            <img src="assets/g1.jpg" alt="Haircut example 1" loading="lazy">
+          </button>
+          <button class="masonry__item" data-full="assets/g2.jpg" aria-label="Open haircut photo 2">
+            <img src="assets/g2.jpg" alt="Haircut example 2" loading="lazy">
+          </button>
+          <button class="masonry__item" data-full="assets/g3.jpg" aria-label="Open haircut photo 3">
+            <img src="assets/g3.jpg" alt="Haircut example 3" loading="lazy">
+          </button>
+          <button class="masonry__item" data-full="assets/g4.jpg" aria-label="Open haircut photo 4">
+            <img src="assets/g4.jpg" alt="Haircut example 4" loading="lazy">
+          </button>
+          <button class="masonry__item" data-full="assets/g5.jpg" aria-label="Open haircut photo 5">
+            <img src="assets/g5.jpg" alt="Haircut example 5" loading="lazy">
+          </button>
+          <button class="masonry__item" data-full="assets/g6.jpg" aria-label="Open haircut photo 6">
+            <img src="assets/g6.jpg" alt="Haircut example 6" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-label="About">
+      <div class="container about reveal">
+        <div class="about__card card">
+          <h2>Meet Hassan</h2>
+          <p class="muted">
+            I’m Hassan (HCuts) — Ottawa-based barber focused on clean fades, crisp line-ups, and consistent results.
+            I keep it professional: punctual appointments, sanitized tools, and attention to detail.
+          </p>
+
+          <div class="about__highlights">
+            <div class="mini">
+              <span class="mini__icon">✂️</span>
+              <div>
+                <p class="mini__title">Precision</p>
+                <p class="mini__desc">Blend, symmetry, finish</p>
+              </div>
+            </div>
+            <div class="mini">
+              <span class="mini__icon">📍</span>
+              <div>
+                <p class="mini__title">Ottawa</p>
+                <p class="mini__desc">Home studio + mobile</p>
+              </div>
+            </div>
+            <div class="mini">
+              <span class="mini__icon">🧴</span>
+              <div>
+                <p class="mini__title">Clean setup</p>
+                <p class="mini__desc">Hygiene always</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn--ghost" href="https://www.instagram.com/hcutsbarber/" target="_blank" rel="noreferrer">
+            See more work on Instagram
+          </a>
+        </div>
+
+        <div class="about__panel card">
+          <h3>How it works</h3>
+          <ol class="steps">
+            <li><strong>Pick a service</strong> from the list</li>
+            <li><strong>Choose location</strong>: my place or yours</li>
+            <li><strong>Choose time</strong> and confirm details</li>
+            <li><strong>Show up fresh</strong> — I’ll handle the rest</li>
+          </ol>
+
+          <div class="note">
+            <p><strong>Mobile visits:</strong> priced by distance/time to keep it fair for everyone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews" aria-label="Reviews">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__title">Client reviews</h2>
+          <p class="sectionHead__desc">Add real testimonials here (DMs/Google) once collected.</p>
+        </div>
+
+        <div class="slider reveal" aria-live="polite">
+          <div class="slider__track" id="reviewTrack">
+            <article class="card review">
+              <p class="review__text">“Best fade I’ve had in Ottawa. Clean, professional, and on time.”</p>
+              <p class="review__meta">— Client (Google/DM)</p>
+            </article>
+            <article class="card review">
+              <p class="review__text">“Line-up is always sharp. Consistent every time.”</p>
+              <p class="review__meta">— Client (Google/DM)</p>
+            </article>
+            <article class="card review">
+              <p class="review__text">“Mobile visit was super convenient — worth it. Great result.”</p>
+              <p class="review__meta">— Client (Google/DM)</p>
+            </article>
+          </div>
+
+          <div class="slider__controls">
+            <button class="btn btn--ghost" id="prevReview" type="button">Prev</button>
+            <button class="btn btn--primary" id="nextReview" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="sectionHead reveal">
+          <h2 class="sectionHead__title">FAQ</h2>
+          <p class="sectionHead__desc">Quick answers — reduces back-and-forth and increases bookings.</p>
+        </div>
+
+        <div class="faq reveal">
+          <button class="faq__q" aria-expanded="false">
+            Where are you located?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>I’m based in Ottawa. You can book at my place or request a mobile visit (travel fee applies).</p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false">
+            How does mobile pricing work?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>Mobile visits are priced fairly by distance/time. You’ll get a quote when you message to book.</p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false">
+            What should I send when booking?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>Service, preferred time, location (my place/your place), and a reference photo if you have one.</p>
+          </div>
+
+          <button class="faq__q" aria-expanded="false">
+            What’s your cancellation policy?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" hidden>
+            <p>Please give notice as early as possible. For last-minute cancellations/no-shows, a fee may apply.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking / Contact -->
+    <section class="section" id="book" aria-label="Book appointment">
+      <div class="container book reveal">
+        <div class="card book__left">
+          <h2>Book an appointment</h2>
+          <p class="muted">
+            Fastest way: click Instagram and message “BOOK” with service + location + preferred time.
+            If you use Square/Calendly later, replace the button below with your booking link.
+          </p>
+
+          <div class="book__actions">
+            <a class="btn btn--primary" href="https://www.instagram.com/hcutsbarber/" target="_blank" rel="noreferrer">
+              Book via Instagram
+            </a>
+            <a class="btn btn--ghost" href="#contactForm">Use form</a>
+          </div>
+
+          <div class="book__cards">
+            <div class="miniCard">
+              <p class="miniCard__title">📍 Service Area</p>
+              <p class="miniCard__desc">Ottawa + nearby (mobile available)</p>
+            </div>
+            <div class="miniCard">
+              <p class="miniCard__title">🕒 Hours</p>
+              <p class="miniCard__desc">Add real schedule here</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card book__right" id="contactForm">
+          <h3>Request a booking</h3>
+          <form class="form" id="bookingForm" novalidate>
+            <div class="form__row">
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <label>
+              Service
+              <select name="service" required>
+                <option value="">Select…</option>
+                <option>Classic Cut</option>
+                <option>Skin Fade</option>
+                <option>Beard Trim + Line-up</option>
+                <option>Cut + Beard</option>
+                <option>Kids Cut</option>
+                <option>Mobile Visit (Add-on)</option>
+              </select>
+            </label>
+
+            <div class="form__row">
+              <label>
+                Location
+                <select name="location" required>
+                  <option value="">Select…</option>
+                  <option>My place</option>
+                  <option>Your place (mobile)</option>
+                </select>
+              </label>
+              <label>
+                Preferred date/time
+                <input type="text" name="time" placeholder="e.g., Friday after 6pm" required />
+              </label>
+            </div>
+
+            <label>
+              Notes (optional)
+              <textarea name="notes" rows="4" placeholder="Reference style, address (if mobile), etc."></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Send request</button>
+            <p class="form__fine muted" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="muted small">
+            This form opens a pre-filled message to Instagram/email (no backend needed). We can upgrade to real booking later.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__brand">HCuts Barber</p>
+          <p class="muted small">Ottawa • Home-based & Mobile</p>
+        </div>
+
+        <div class="footer__links">
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#book">Book</a>
+          <a href="https://www.instagram.com/hcutsbarber/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+
+        <p class="muted small">© <span id="year"></span> HCuts Barber. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image">✕</button>
+    <img class="lightbox__img" id="lightboxImg" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
